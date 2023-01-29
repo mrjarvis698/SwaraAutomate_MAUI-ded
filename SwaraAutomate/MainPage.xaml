@@ -5,28 +5,35 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
+            Spacing="20"
             Padding="30,0"
             VerticalOptions="Center">
+
+            <Label
+                Text="Hello User,"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="50"
+                HorizontalOptions="CenterAndExpand" />
 
             <Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
+                HorizontalOptions="CenterAndExpand" />
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Welcome to Swara-Automate."
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Welcome to Swara-Automate"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label
+                Text="Please Login or SignUp to Identify Your Identity"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Login Text"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="CenterAndExpand" />
 
             <Button
                 x:Name="CounterBtn"
