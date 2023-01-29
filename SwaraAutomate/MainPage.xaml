@@ -29,17 +29,17 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <Label
-                Text="Please Login or SignUp to Identify Your Identity"
+                Text="Click on Continue to Proceed with Indentity."
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Login Text"
                 FontSize="18"
                 HorizontalOptions="CenterAndExpand" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="continuebtn"
+                Text="Continue >"
+                SemanticProperties.Hint="Proceed to login/signup"
+                Clicked="OnContinueClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
