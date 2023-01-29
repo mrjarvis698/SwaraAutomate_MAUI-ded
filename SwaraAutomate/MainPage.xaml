@@ -35,13 +35,33 @@
                 FontSize="18"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <HorizontalStackLayout
+                Spacing="5"
+                Padding="25,0"
+                HorizontalOptions="Center">
 
+                <Button
+                x:Name="LoginBtn"
+                Clicked="OnLoginClicked"
+                Text="Login"
+                SemanticProperties.Hint="Lands to Login Page"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Label
+                Text="/"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="or"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Button
+                x:Name="SignUpBtn"
+                Clicked="OnSignUpClicked"
+                Text="SignUp"
+                SemanticProperties.Hint="Lands to Signup Page"
+                HorizontalOptions="CenterAndExpand" />
+
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
