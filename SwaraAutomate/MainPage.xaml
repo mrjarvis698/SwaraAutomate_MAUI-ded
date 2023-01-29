@@ -6,27 +6,37 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="20"
-            Padding="30,0"
+            Padding="0,0"
             VerticalOptions="Center">
+            <HorizontalStackLayout
+                Spacing="20"
+                Padding="0,30"
+                HorizontalOptions="Center">
+                <VerticalStackLayout
+                    Spacing="00"
+                    Padding="30,30"
+                    VerticalOptions="Center">
+                        <Label
+                            Text="Hello User,"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="25"
+                            HorizontalOptions="End" />
 
-            <Label
-                Text="Hello User,"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="50"
-                HorizontalOptions="CenterAndExpand" />
+                        <Label
+                            Text="Welcome to "
+                            SemanticProperties.HeadingLevel="Level2"
+                            SemanticProperties.Description="Welcome to Swara-Automate"
+                            FontSize="60"
+                            HorizontalOptions="CenterAndExpand" />
+                </VerticalStackLayout>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="CenterAndExpand" />
+                    <Image
+                        Source="{AppThemeBinding Light=dark_logo.png, Dark=light_logo.png}"
+                        SemanticProperties.Description="SwaraAutomate Dynamic Logo"
+                        HeightRequest="200"
+                        HorizontalOptions="CenterAndExpand" />
 
-            <Label
-                Text="Welcome to Swara-Automate."
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to Swara-Automate"
-                FontSize="30"
-                HorizontalOptions="CenterAndExpand" />
+            </HorizontalStackLayout>
 
             <Label
                 Text="Click on Continue to Proceed with Indentity."
@@ -34,7 +44,6 @@
                 SemanticProperties.Description="Login Text"
                 FontSize="18"
                 HorizontalOptions="CenterAndExpand" />
-
             <Button
                 x:Name="continuebtn"
                 Text="Continue >"
